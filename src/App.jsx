@@ -4,7 +4,7 @@
 // import heroImg from './assets/hero.png'
 
 import data from './data.json';
-
+import Gallery from './Gallery';
 import
 'bootstrap/dist/css/bootstrap.mim.css'
 import Header from './components/Header'
@@ -22,6 +22,29 @@ function App() {
     <Footer />
     </>
   )
+}
+
+import { useState } from 'react';
+import data from './data.json';
+
+function App() {
+  const [galleryData, setGalleryData] = useState(data);
+
+  return (
+    <div>
+      {/* we'll use this soon */}
+    </div>
+  );
+}
+
+function App() {
+  const [galleryData] = useState(data);
+
+  return (
+    <div>
+      <Gallery items={galleryData} />
+    </div>
+  );
 }
 
 export default App

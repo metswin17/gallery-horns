@@ -11,4 +11,16 @@ function Gallery() {
 
   )
 }
+
+function Gallery(props) {
+  console.log(props.items);
+
+  return (
+    <div>
+      <h1>Gallery</h1>
+    </div>
+  );
+}
+
+
 export default Gallery; 
