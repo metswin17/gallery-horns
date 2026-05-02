@@ -1,7 +1,4 @@
 
-
-
-
 function HornedBeast(props) {
   return (
     <>

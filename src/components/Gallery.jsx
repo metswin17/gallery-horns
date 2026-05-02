@@ -1,26 +1,20 @@
 import HornedBeast from "./HornedBeast";
 
-
-
-function Gallery() {
-  return (
-  <>
-    <HornedBeast />
-    <HornedBeast />
-  </>
-
-  )
-}
-
-function Gallery(props) {
-  console.log(props.items);
-
+function Gallery({ items }) {
   return (
     <div>
       <h1>Gallery</h1>
+
+      {items.map((beast) => (
+        <HornedBeast
+          key={beast._id}
+          title={beast.title}
+          image_url={beast.image_url}
+          description={beast.description}
+        />
+      ))}
     </div>
   );
 }
 
-
-export default Gallery; 
+export default Gallery;
