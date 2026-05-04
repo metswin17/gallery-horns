@@ -12,8 +12,8 @@ function App() {
   const [galleryData] = useState(data);
 
   // ✅ Add ONLY these lines
-  const [selectedBeast, setSelectedBeast] = useState(null);
-  const [showModal, setShowModal] = useState(false);
+  //const [selectedBeast, setSelectedBeast] = useState(null);
+  //const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -23,5 +23,7 @@ function App() {
     </>
   );
 }
+
+
 
 export default App;
