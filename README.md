@@ -14,3 +14,32 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Number and name of feature: Feature #1: Display Images
+Estimate of time needed to complete: ___4hrs__
+
+Start time: ___noon __
+
+Finish time: __6pm ___
+
+Actual time needed to complete: ____6hrs
+
+Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Number and name of feature: Feature 3: Bootstrap
+
+Estimate of time needed to complete: _____
+hornArms
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
