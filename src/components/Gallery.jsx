@@ -1,6 +1,6 @@
 import HornedBeast from "./HornedBeast";
 
-function Gallery({ items }) {
+function Gallery({ items, setSelectedBeast, setShowModal }) {
   return (
     <div>
       <h1>Gallery</h1>

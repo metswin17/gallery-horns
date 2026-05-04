@@ -11,6 +11,10 @@ import './App.css';
 function App() {
   const [galleryData] = useState(data);
 
+  // ✅ Add ONLY these lines
+  const [selectedBeast, setSelectedBeast] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <Header />
