@@ -89,7 +89,7 @@
   },
   {
     "_id": 12,
-    "image_url": "https://www.columbuszoo.org/sites/default/files/styles/square_large/public/assets/animals/Markhor%20%28Gambit%29%202375%20-%20Amanda%20Carberry%2C%20Columbus%20Zoo%20and%20Aquarium.jpg?h=d537e520&itok=GqMgurSm",
+       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/960px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg",
     "title": "Markhor",
     "description": "These wild goats eat snakes, then secrete a foam that locals fight over for the antivemon properties -- how cool is that?",
     "keyword": "markhor",
@@ -154,9 +154,9 @@
   {
 
     "_id": 20,
-    "image_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/Smaug.jpg",
+      "image_url": "https://i.pinimg.com/originals/df/bb/34/dfbb3452d46b0ae3fb5cb8f103a8f4f5.jpg",
     "title": "Smaug",
-    "description": "Smaug is a Fire-Drake with wingsthat allow him to fly'",
+    "description": "Fan illustration of Smaug from 'The Hobbit'",
     "keyword": "dragon",
     "horns": 100
   }
