@@ -13,6 +13,8 @@ function App() {
   const [galleryData] = useState(data);
 
   const [selectedBeast, setSelectedBeast] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
+
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = (beast) => {
@@ -24,12 +26,25 @@ function App() {
     setShowModal(false);
   };
 
+  const filteredBeasts = galleryData.filter((beast) => {
+    const regex = new RegExp(searchTerm, 'i');
+  
+    return regex.test(beast.title);
+  });
+
   return (
     <>
       <Header />
-
+      
+    <input
+  className="search-bar"
+  type="text"
+  placeholder="Search beasts..."
+  value={searchTerm}
+  onChange={(event) => setSearchTerm(event.target.value)}
+/>
       <Gallery
-        galleryData={galleryData}
+        galleryData={filteredBeasts}
         handleOpenModal={handleOpenModal}
       />
 
@@ -38,6 +53,7 @@ function App() {
         handleClose={handleCloseModal}
         beast={selectedBeast}
       />
+
 
       <Footer />
     </>
