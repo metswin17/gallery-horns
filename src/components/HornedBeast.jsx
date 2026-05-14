@@ -1,28 +1,18 @@
 
-import { useState } from "react";
-import { Card } from "react-bootstrap";
-
-function HornedBeast(props) {
-  const [favorites, setFavorites] = useState(0);
-
+function HornedBeast({ beast, handleOpenModal }) {
   return (
-    <Card>
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+    <div>
+      <h2>{beast.title}</h2>
 
-        <Card.Img
-          src={props.image_url}
-          onClick={() => setFavorites(favorites + 1)}
-        />
+      <img
+        src={beast.image_url}
+        alt={beast.title}
+        title={beast.title}
+        onClick={() => handleOpenModal(beast)}
+      />
 
-        <Card.Text>{props.description}</Card.Text>
-
-        <Card.Text style={{ fontWeight: "bold" }}>
-          Favorites: {favorites}
-        </Card.Text>
-
-      </Card.Body>
-    </Card>
+      <p>{beast.description}</p>
+    </div>
   );
 }
 
